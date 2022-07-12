@@ -1,0 +1,373 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  /* box-sizing: border-box; */
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  /* display: block; */
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* .header{
+	position: absolute;
+	width: 100%;
+	height: 100.95px;
+	left: 0px;
+	top: 0px;
+	align-items: center;
+} */
+/* .conteiner{
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;Между элементами будет пустое место */
+	/* align-items: center;
+	border-bottom:1px solid #BABBC5;
+}
+.header__logo1{
+}
+.nav{
+	font-family:'OpenSans';
+	font-size: 14px;
+	font: weight 500px;;
+	text-transform:
+	uppercase;
+	display: flex;
+}
+.nav__link{
+	color:#fdfdfd;
+	text-decoration: none;
+	opacity: 0.75;
+	transition: opacity .1s linear;
+	margin-left: 50px;
+}
+.conteiner2{
+	width: 100%;
+}
+.nav__link:hover{
+	opacity: 1;
+}
+.conteiner2__h1{
+	position: absolute;
+	left: 11.26%;
+	right: 11.26%;
+	top: 5.06%;
+	bottom: 91.65%;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 75px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 230px;
+}
+.conteiner2__h5{
+	position: absolute;
+	left: 11.26%;
+	right: 11.26%;
+	top: 9.04%;
+	bottom: 89.72%;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top:350px;
+}
+.button{
+	position: absolute;
+	width: 370px;
+	height: 80px;
+	left: 570px;
+	top: 547px;
+	background: #FF4343;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 7px;
+}
+.features{
+	width:100%;
+	height: 993px;
+	left: 170px;
+	top: 863px;
+}
+.features1{
+	position: absolute;
+	width: 370px;
+	height: 305.43px;
+	left: 170px;
+	top: 863px;
+}
+.features1__icon{
+margin-left: 140px ;
+}
+.features1__h3{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2D3033;
+	margin-top: 40px;
+}
+.features1__h5{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	align-items: center;
+	text-align: center;
+	color: #6C7279;
+	margin-top: 50px;
+}
+
+.features2{
+	position: absolute;
+	width: 370px;
+	height: 305.43px;
+	left: 571px;
+	top: 863px;
+}
+.features3{
+	position: absolute;
+	width: 370px;
+	height: 305.43px;
+	left: 970px;
+	top: 863px;	
+}
+.features4{
+	position: absolute;
+	width: 370px;
+	height: 305.43px;
+	left: 170px;
+	top: 1257px;
+}
+.features5{
+	position: absolute;
+	width: 370px;
+	height: 305.43px;
+	left: 571px;
+	top: 1256px;
+}
+.features6{
+	position: absolute;
+	width: 370px;
+	height: 305.43px;
+	left: 970px;
+	top: 1257px;
+} */
+
+
+
+
+.background {
+	background-image:  linear-gradient(to top, rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)),
+	url('../img/img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 747px;
+}
+
+
+.navigation {
+	width: 1170px;
+	margin: 0 auto;
+	border-bottom: 1px solid #BABBC5;
+}
+
+.navigation__logo {
+	display: inline-block;
+}
+
+.navigation__block {
+   vertical-align: top;
+   padding-top: 40px;
+	float: right;
+}
+
+.navigation__link {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0px 30px;
+}
+
+.active {
+	border-bottom: 3px solid white;
+	padding-bottom: 46px;
+}
+
+.header {
+	width: 1170px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header__title {
+	font-family:'Raleway';
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-top: 130px;
+	margin: 0 0 30px;
+}
+.header__subtitle{
+	width: 897px;
+	font-size: 24px;
+	color:#FFFFFF;
+	line-height: 28px;
+	font-weight: 400;
+	margin-bottom: 82px;
+	padding: 0 140px;
+}
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	padding:18px;
+
+	border-radius: 2px;
+	border:0;
+	cursor: pointer;
+
+	font-family:'Raleway';
+	font-size:24px ;
+	color: #FFFFFF;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn--red{
+	background-color:#FF4343;
+}
+
+.conteiner{
+	width: 100%;
+}
+.features{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.features__item{
+	width: 370px;
+	text-align: center;
+	padding: 0 10px;
+	margin-top: 100px;
+}
+.features__icon{
+	margin-bottom: 20px;
+}
+.features__title{
+	font-family: 'Raleway';
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #2D3033;
+	margin-bottom: 20px;
+}
+.features__text{
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #6C7279;
+	
+}
