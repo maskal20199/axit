@@ -335,7 +335,9 @@ margin-left: 140px ;
 .btn--red{
 	background-color:#FF4343;
 }
+
 /*======== Контейнер1 ========*/
+
 .conteiner{
 	width: 100%;
 }
@@ -372,7 +374,9 @@ margin-left: 140px ;
 	color: #6C7279;
 	
 }
+
 /*======== Контейнер2 ========*/
+
 .conteiner2{
 width: 100%;
 height: 900px;
@@ -476,4 +480,126 @@ li{
 	align-items: center;
 	text-align: center;
 	margin: 30px;
+}
+
+/*======== Контейнер2 ========*/
+
+.conteiner2__pricing{
+	width:100% ;
+	height: 100px;
+	text-align: center;
+	padding-top: 90px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	align-items: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+.conteiner2__border{
+	width: 170px;
+	border: 1px solid #EC7979;
+	margin: 0 auto;
+}
+.conteiner2__quote{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	align-items: center;
+	text-align: center;
+	color: #86878B;
+	padding-top: 40px;
+}
+.conteiner2__revievs{
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+	align-items:stretch;
+}
+.revires__box{
+	width: 370px;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border-radius: 10px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #86878B;
+	background: #E2E2E2;
+	margin-left: 30px;
+}
+.polygon{
+	position: relative;
+	display: flex;
+	justify-content:center;
+	z-index: 1;
+	margin-top: -10px;
+}
+.polygon__one{
+	width: 30px;
+	height: 20px;
+	transform: rotate(324deg);
+	background:  #E2E2E2;
+	margin-left: -150px;
+}
+.polygon__two{
+	width: 30px;
+	height: 20px;
+	transform: rotate(324deg);
+	background: #E2E2E2;
+	margin-left: 370px;
+}
+.polygon__three{
+	width: 30px;
+	height: 20px;
+	transform: rotate(324deg);
+	background: #E2E2E2;
+	margin-left: 370px;
+}
+
+
+.people{
+	width: 1200px;
+	display: flex;
+	justify-content:center;
+	margin-top:65px ;
+	padding-bottom: 64px;
+	padding-left: 315px;
+}
+.people__photo{
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.people__initials{
+	position: relative;
+	z-index: 2;
+	width: 269px;
+	height: 54px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	margin-top: -62px;
+	margin-left: 100px;
+	text-transform: capitalize;
+	color: #000000;
+}
+.people__job-title{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	margin-left: 100px;
 }
