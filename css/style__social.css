@@ -1,0 +1,39 @@
+.social{
+width: 100%;
+height: 140px;
+background: #F8EFEF;
+display: flex;
+justify-content: center;
+}
+.social__text{
+	width: 470px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.social__title{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	text-transform: capitalize;
+	color: #333333;	
+	margin-top: 20px;
+}
+.social__subtitle{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #86878B;
+}
+.social__icon{
+	width: 600px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	font-size: 55px;
+	color: #CCCCCC;
+	margin-left: 50px;
+}
