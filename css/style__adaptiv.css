@@ -21,19 +21,79 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+	
+	.revirews__box:nth-child(3){
+		display: none;
+	}
+	.revirews__box:nth-child(2){
+		display: none;
+	}
 	.pricing__price{
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.price__box-price-one{
+	display: none;
+	}
+	.price__box-price{
+		width:410px;
+		height: 510px;
 		align-items: center;
 		text-align: center;
-		margin: 0;
+	}
+
+
+	.message{
+		width: 571px;
+		height: 215px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		color: #BDBDBD;
+		border: none;
+		border-bottom: 1px solid #BDBDBD;
+		background-color: transparent;
+		outline: none;
+		transition: 0.3s;
+		margin-right: 30px;
+	}
+	.contact__button {
+		display: inline-block;
+		vertical-align: top;
+		cursor: pointer;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		color: #FFFFFF;
+		background: #EC7979;
+		text-transform: capitalize;
+		text-decoration: none;
+		padding: 20px 140px;
+		margin-top: 50px;
+	}
+	.footer__icon{
+		width: 600px;
+		display: flex;
+		justify-content:space-between;
+		font-size: 40px;
+		color:#CCCCCC;
+		margin-top: 42px;
 	}
 }
 @media(max-width: 727px) {
+
+	.tabs {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
 	.tabs__box {
 		display: flex;
 		position: relative;
@@ -48,7 +108,6 @@
 		color: #333333;
 		margin-top: 99px;
 		z-index: 1;
-		margin-right:8px;
 	}
 	.box__tab1 {
 		height: 39px;
@@ -59,7 +118,7 @@
 		border-radius: 3px;
 	}
 	.tabs__text {
-		width: 600px;
+		width: 100%;
 		height: 501px;
 		border: 1px solid #C6CBCD;
 		display: flex;
@@ -130,5 +189,228 @@
 		color: #86878B;
 		margin-top: 18px;
 		padding-bottom: 18px;
+	}
+	.message{
+		width: 571px;
+		height: 215px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		color: #BDBDBD;
+		border: none;
+		border-bottom: 1px solid #BDBDBD;
+		background-color: transparent;
+		outline: none;
+		transition: 0.3s;
+		margin: 0;
+	}
+}
+@media(max-width: 654px){
+	.header__title {
+		font-family: 'Raleway';
+		font-weight: 900;
+		font-size: 50px;
+		line-height: 75px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		padding-top: 130px;
+		margin: 0 0 30px;
+	}
+	.social__text {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+	.social__subtitle {
+		width: 100%;
+		height: 42px;
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: #86878B;
+		margin-top: 18px;
+		margin-bottom: 18px;
+	}
+	.social__icon {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 30px;
+		color: #CCCCCC;
+		padding-bottom: 18px;
+		margin: 0;
+	}
+	.tabs__box {
+		width: 100%;
+		display: flex;
+		position: relative;
+		justify-content: flex-start;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #333333;
+		margin-top: 99px;
+		z-index: 1;
+		margin-right:8px;
+	}
+	.tabs__title {
+		width: 100%;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 41px;
+		color: #000000;
+		margin-left: 25px;
+	}
+	.tabs__conteiner{
+		width: 100%;
+		height: 501px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.tabs__btn {
+		display: inline-block;
+		vertical-align: top;
+		padding: 9px 35px;
+		border-radius: 2px;
+		border: 0;
+		cursor: pointer;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		text-decoration: none;
+		color: #FFFFFF;
+		background-color: #EC7979;
+		margin-left: 25px;
+	}
+	.box__tab3 {
+		width: 33.3333%;
+		line-height: 39px;
+		border-bottom: 1px solid #C6CBCD;
+	}
+	.price__box-price {
+		width: 100%;
+		height: 510px;
+		align-items: center;
+		text-align: center;
+	}
+
+	.revirews__box {
+		width: 370px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0;
+	}
+	.people__initials {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 54px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
+		text-transform: capitalize;
+		color: #000000;
+		margin: 0;
+	}
+
+	.people__job-title {
+		width: 100%;
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: #000000;
+		margin: 0;
+	}
+	.polygon__one {
+		width: 30px;
+		height: 20px;
+		transform: rotate(324deg);
+		background: #E2E2E2;
+		margin-top: -200px;
+		margin-left: 44px;
+	}
+
+	.stylish__button {
+		display: inline-block;
+		vertical-align: top;
+		/* padding: 18px 200px; */
+		cursor: pointer;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		color: #FFFFFF;
+		border: 2px solid #FFFFFF;
+		text-transform: capitalize;
+		text-decoration: none;
+		margin-top: 74px;
+		padding: 10px 70px;
+		margin-bottom: 50px;
+	}
+
+	.form__conteiner {
+		width: 100%;
+		position: relative;}
+	.message{
+		width: 100%;
+		height: 215px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		color: #BDBDBD;
+		border: none;
+		border-bottom: 1px solid #BDBDBD;
+		background-color: transparent;
+		outline: none;
+		transition: 0.3s;
+		margin: 0;
+	}
+	.contact__button {
+		display: inline-block;
+		vertical-align: top;
+		cursor: pointer;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		color: #FFFFFF;
+		background: #EC7979;
+		text-transform: capitalize;
+		text-decoration: none;
+		padding: 10px 70px;
+		margin-top: 50px;
+	}
+
+	.footer__conteiner {
+		width: 100%;
+	}
+	.footer__icon {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 40px;
+		color: #CCCCCC;
+		margin-top: 42px;
 	}
 }
