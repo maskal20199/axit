@@ -1,9 +1,9 @@
 .social{
 width: 100%;
-height: 140px;
 background: #F8EFEF;
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 }
 .social__text{
 	width: 470px;
@@ -11,6 +11,8 @@ justify-content: center;
 	flex-wrap: wrap;
 }
 .social__title{
+	width: 470px;
+	height: 60px;
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 700;
@@ -21,12 +23,16 @@ justify-content: center;
 	margin-top: 20px;
 }
 .social__subtitle{
+	width: 470px;
+	height: 42px;
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
 	color: #86878B;
+	margin-top: 18px;
+	padding-bottom: 18px;
 }
 .social__icon{
 	width: 600px;
@@ -36,4 +42,5 @@ justify-content: center;
 	font-size: 55px;
 	color: #CCCCCC;
 	margin-left: 50px;
+	padding-bottom: 18px;
 }
