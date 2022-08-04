@@ -37,6 +37,8 @@
 	display: flex;
 	justify-content: center;
 	padding-top: 60px;
+	width: 1170px;
+	margin: 0 auto;
 }
 .price__box-price{
 	width:33.3333%;

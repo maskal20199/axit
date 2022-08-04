@@ -34,6 +34,7 @@
 		flex-wrap: wrap;
 		padding-top: 60px;
 		padding-bottom: 60px;
+		width: 100%;
 	}
 	.price__box-price-one{
 	display: none;
@@ -88,7 +89,8 @@
 @media(max-width: 727px) {
 
 	.tabs {
-		width: 100%;
+		width: 98%;
+		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
@@ -412,5 +414,15 @@
 		font-size: 40px;
 		color: #CCCCCC;
 		margin-top: 42px;
+	}
+
+	.features {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	.pricing__price {
+		width: 98%;
+		margin: 0 auto;
 	}
 }
